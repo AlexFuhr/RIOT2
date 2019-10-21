@@ -1,0 +1,10 @@
+FAM = $(shell echo $(CPU_FAM) | tr 'a-z-' 'A-Z_')
+CFLAGS += -DCPU_FAM_$(FAM)
+
+# include nrf5x common periph drivers
+USEMODULE += nrf5x_common_periph
+
+# link common cpu code
+USEMODULE += cpu_common
+
+INCLUDES += -I$(RIOTCPU)/nrf5x_common/include
