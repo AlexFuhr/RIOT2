@@ -17,6 +17,7 @@ USEMODULE += shell
 USEMODULE += shell_commands
 # additional modules for debugging:
 USEMODULE += ps
+USEMODULE += bme280
 
 # Comment this out to disable code in RIOT that does safety checking
 # which is not needed in a production environment but helps in the

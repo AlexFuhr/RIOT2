@@ -43,7 +43,11 @@ USEMODULE += ps
 USEMODULE += netstats_l2
 USEMODULE += netstats_ipv6
 USEMODULE += netstats_rpl
-
+# need to include for using external sensor (use default parameters)
+USEMODULE += bme280
+# we want to use SAUL:
+USEMODULE += saul_default
+USEMODULE += xtimer
 # Comment this out to disable code in RIOT that does safety checking
 # which is not needed in a production environment but helps in the
 # development process:

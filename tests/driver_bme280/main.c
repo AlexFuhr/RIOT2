@@ -130,6 +130,7 @@ int main(void)
 
 
 int data = Abfrage();
+
  printf("Daten Zurückgesendet: [%i]", data);
  printf("Fertig");
     
