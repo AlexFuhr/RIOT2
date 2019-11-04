@@ -46,10 +46,10 @@ extern "C" {
         .i2c_dev = BMX280_PARAM_I2C_DEV,   \
         .i2c_addr = BMX280_PARAM_I2C_ADDR, \
         .t_sb = BMX280_SB_0_5,             \
-        .filter = BMX280_FILTER_OFF,       \
+        .filter = BMX280_FILTER_16,       \
         .run_mode = BMX280_MODE_FORCED,     \
-        .temp_oversample = BMX280_OSRS_X1,  \
-        .press_oversample = BMX280_OSRS_X1, \
+        .temp_oversample = BMX280_OSRS_X2,  \
+        .press_oversample = BMX280_OSRS_X16, \
         .humid_oversample = BMX280_OSRS_X1, \
     }
 /**@}*/

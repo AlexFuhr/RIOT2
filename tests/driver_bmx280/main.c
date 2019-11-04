@@ -27,11 +27,31 @@
 #include "bmx280.h"
 #include "xtimer.h"
 
-#define MAINLOOP_DELAY  (2 * 1000 * 1000u)      /* 2 seconds delay between printf's */
+#define MM_PER_PASCAL 85	// int 
+#define MAINLOOP_DELAY  (1 * 50 * 1000u)      /* 2 seconds delay between printf's */
+// delay mitgeben 
+uint32_t Middle (bmx280_t *dev, uint32_t time_us, int count)
+{
+
+	uint32_t PressureSum = 0;
+	/* Get pressure in Pa */
+	// For Schleife  
+	// Count maximale anzahl ~ 35000
+	for (int i=1;i<=count;i++) {        
+		bmx280_read_temperature(dev);
+		int pressure = bmx280_read_pressure(dev);
+		PressureSum += pressure;
+		//printf("%d\n", pressure);
+		xtimer_usleep(time_us);
+	}
+	return PressureSum; 
+}
+
 
 int main(void)
 {
     bmx280_t dev;
+	
     int result;
 
     puts("BMX280 test application\n");
@@ -75,6 +95,11 @@ int main(void)
 #endif
 
     printf("\n+--------Starting Measurements--------+\n");
+
+	
+	uint32_t startpressure =  Middle(&dev, MAINLOOP_DELAY, 10); 
+	printf("Startwert: %d\n", startpressure);
+	
     while (1) {
         int16_t temperature;
         uint32_t pressure;
@@ -84,10 +109,13 @@ int main(void)
 
         /* Get temperature in centi degrees Celsius */
         temperature = bmx280_read_temperature(&dev);
-
-        /* Get pressure in Pa */
-        pressure = bmx280_read_pressure(&dev);
-
+		
+		pressure = Middle(&dev, MAINLOOP_DELAY, 10);
+		int PDiff = startpressure - pressure;  
+		int high_mm = (PDiff * MM_PER_PASCAL)/10;  
+		
+		//_____________
+		
 #if defined(MODULE_BME280)
         /* Get pressure in %rH */
         humidity = bme280_read_humidity(&dev);
@@ -95,6 +123,7 @@ int main(void)
 
         printf("Temperature [°C]: %d.%d\n"
                "Pressure [Pa]: %lu\n"
+               "Höhe [mm]: %d\n"
 #if defined(MODULE_BME280)
                "Humidity [%%rH]: %u.%02u\n"
 #endif
@@ -102,6 +131,7 @@ int main(void)
                temperature / 100, abs(temperature % 100) / 10,
 #if defined(MODULE_BME280)
                (unsigned long)pressure,
+               high_mm,                                                           //  ------------------------
                (unsigned int)(humidity / 100), (unsigned int)(humidity % 100)
 #else
                (unsigned long)pressure
