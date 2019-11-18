@@ -1624,8 +1624,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
  .data          0x0000000000000000        0x0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
  .bss           0x0000000000000000        0x0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
+ .rodata.bme280_pressure_saul_driver
+                0x0000000000000000        0xc /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
  .xt.lit        0x0000000000000000       0x18 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
- .xt.prop       0x0000000000000000       0xc0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
+ .xt.prop       0x0000000000000000       0xcc /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
  .literal._msg_receive
                 0x0000000000000000        0x0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/core/msg.o
  .literal.queue_msg
@@ -3096,7 +3098,7 @@ LOAD /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../..
                 0x000000003ffe0000                _heap_top = ABSOLUTE (.)
                 0x000000003ffe0000                _eheap = ABSOLUTE (.)
 
-.flash.rodata   0x000000003f400020     0x2a54
+.flash.rodata   0x000000003f400020     0x2a5c
                 0x000000003f400020                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  .rodata        0x000000003f400020       0x18 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/startup.o
@@ -3232,9 +3234,9 @@ LOAD /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../..
                 0x000000003f401c20       0x24 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/auto_init_saul/auto_init_bmx280.o
  .rodata.str1.1
                 0x000000003f401c44       0x42 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280.o
- .rodata.__func__$4050
+ .rodata.__func__$4051
                 0x000000003f401c86        0xf /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280.o
- .rodata.__func__$4036
+ .rodata.__func__$4037
                 0x000000003f401c95       0x16 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280.o
  *fill*         0x000000003f401cab        0x1 
  .rodata.bme280_relative_humidity_saul_driver
@@ -3268,69 +3270,69 @@ LOAD /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../..
  .rodata.t$2719
                 0x000000003f4022f8       0x30 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
  .rodata.str1.1
-                0x000000003f402328       0x7b /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
-                                         0x94 (size before relaxing)
+                0x000000003f402328       0x7f /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
+                                         0x98 (size before relaxing)
  .rodata.CSWTCH$4
-                0x000000003f4023a3       0x1f /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
- *fill*         0x000000003f4023c2        0x2 
+                0x000000003f4023a7       0x1f /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
+ *fill*         0x000000003f4023c6        0x2 
  .rodata.CSWTCH$2
-                0x000000003f4023c4       0x74 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
+                0x000000003f4023c8       0x78 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
  .rodata.str1.1
-                0x000000003f402438      0x19e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul_str.o
- *fill*         0x000000003f4025d6        0x2 
+                0x000000003f402440      0x19e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul_str.o
+ *fill*         0x000000003f4025de        0x2 
  .rodata.CSWTCH$1
-                0x000000003f4025d8      0x400 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul_str.o
+                0x000000003f4025e0      0x400 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul_str.o
  .rodata._tenmap
-                0x000000003f4029d8       0x20 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
+                0x000000003f4029e0       0x20 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
  *(.irom1.text)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x000000003f4029f8                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003f402a00                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table .gcc_except_table.*)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
-                0x000000003f4029f8                . = ((. + 0x3) & 0xfffffffffffffffc)
-                0x000000003f4029f8                __eh_frame = ABSOLUTE (.)
+                0x000000003f402a00                . = ((. + 0x3) & 0xfffffffffffffffc)
+                0x000000003f402a00                __eh_frame = ABSOLUTE (.)
  *(.eh_frame)
- .eh_frame      0x000000003f4029f8       0x28 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdi3.o)
- .eh_frame      0x000000003f402a20       0x28 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .eh_frame      0x000000003f402a48       0x28 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
-                0x000000003f402a74                . = ((. + 0x7) & 0xfffffffffffffffc)
- *fill*         0x000000003f402a70        0x4 
-                0x000000003f402a74                __init_array_start = ABSOLUTE (.)
+ .eh_frame      0x000000003f402a00       0x28 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdi3.o)
+ .eh_frame      0x000000003f402a28       0x28 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x000000003f402a50       0x28 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
+                0x000000003f402a7c                . = ((. + 0x7) & 0xfffffffffffffffc)
+ *fill*         0x000000003f402a78        0x4 
+                0x000000003f402a7c                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000000003f402a74                __init_array_end = ABSOLUTE (.)
+                0x000000003f402a7c                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000000003f402a74                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x000000003f402a7c                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003f402a74                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003f402a7c                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003f402a74                _rodata_end = ABSOLUTE (.)
-                0x000000003f402a74                _lit4_start = ABSOLUTE (.)
+                0x000000003f402a7c                _rodata_end = ABSOLUTE (.)
+                0x000000003f402a7c                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003f402a74                _lit4_end = ABSOLUTE (.)
-                0x000000003f402a74                . = ALIGN (0x4)
-                0x000000003f402a74                _thread_local_start = ABSOLUTE (.)
+                0x000000003f402a7c                _lit4_end = ABSOLUTE (.)
+                0x000000003f402a7c                . = ALIGN (0x4)
+                0x000000003f402a7c                _thread_local_start = ABSOLUTE (.)
  *(.tdata)
  *(.tdata.*)
  *(.tbss)
  *(.tbss.*)
-                0x000000003f402a74                _thread_local_end = ABSOLUTE (.)
-                0x000000003f402a74                . = ALIGN (0x4)
+                0x000000003f402a7c                _thread_local_end = ABSOLUTE (.)
+                0x000000003f402a7c                . = ALIGN (0x4)
 
-.flash.text     0x00000000400d0018     0xe092
+.flash.text     0x00000000400d0018     0xe09a
                 0x00000000400d0018                _stext = .
                 0x00000000400d0018                _text_start = ABSOLUTE (.)
  *(.literal .text .literal.* .text.* .stub)
@@ -4165,458 +4167,458 @@ LOAD /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../..
                                          0x21 (size before relaxing)
  *fill*         0x00000000400dbd99        0x3 
  .text.read_pressure
-                0x00000000400dbd9c       0x26 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
-                                         0x2e (size before relaxing)
- *fill*         0x00000000400dbdc2        0x2 
+                0x00000000400dbd9c       0x2a /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
+                                         0x36 (size before relaxing)
+ *fill*         0x00000000400dbdc6        0x2 
  .text.read_relative_humidity
-                0x00000000400dbdc4       0x19 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
+                0x00000000400dbdc8       0x19 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/bmx280/bmx280_saul.o
                                          0x21 (size before relaxing)
- *fill*         0x00000000400dbddd        0x3 
+ *fill*         0x00000000400dbde1        0x3 
  .text.auto_init_random
-                0x00000000400dbde0       0x13 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/random/random.o
+                0x00000000400dbde4       0x13 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/random/random.o
                                          0x1f (size before relaxing)
-                0x00000000400dbde0                auto_init_random
- *fill*         0x00000000400dbdf3        0x1 
+                0x00000000400dbde4                auto_init_random
+ *fill*         0x00000000400dbdf7        0x1 
  .text.random_init
-                0x00000000400dbdf4       0x11 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/random/tinymt32.o
+                0x00000000400dbdf8       0x11 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/random/tinymt32.o
                                          0x18 (size before relaxing)
-                0x00000000400dbdf8                random_init
- *fill*         0x00000000400dbe05        0x3 
+                0x00000000400dbdfc                random_init
+ *fill*         0x00000000400dbe09        0x3 
  .text.random_uint32
-                0x00000000400dbe08       0x65 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/random/tinymt32.o
+                0x00000000400dbe0c       0x65 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/random/tinymt32.o
                                          0x6d (size before relaxing)
-                0x00000000400dbe08                random_uint32
- *fill*         0x00000000400dbe6d        0x3 
- .text.write    0x00000000400dbe70       0x1e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/gpio_saul.o
+                0x00000000400dbe0c                random_uint32
+ *fill*         0x00000000400dbe71        0x3 
+ .text.write    0x00000000400dbe74       0x1e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/gpio_saul.o
                                          0x22 (size before relaxing)
- *fill*         0x00000000400dbe8e        0x2 
- .text.read     0x00000000400dbe90       0x31 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/gpio_saul.o
+ *fill*         0x00000000400dbe92        0x2 
+ .text.read     0x00000000400dbe94       0x31 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/gpio_saul.o
                                          0x35 (size before relaxing)
- *fill*         0x00000000400dbec1        0x3 
+ *fill*         0x00000000400dbec5        0x3 
  .text.saul_reg_add
-                0x00000000400dbec4       0x2e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
-                0x00000000400dbec8                saul_reg_add
- *fill*         0x00000000400dbef2        0x2 
+                0x00000000400dbec8       0x2e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
+                0x00000000400dbecc                saul_reg_add
+ *fill*         0x00000000400dbef6        0x2 
  .text.saul_reg_find_nth
-                0x00000000400dbef4       0x1c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
+                0x00000000400dbef8       0x1c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
                                          0x20 (size before relaxing)
-                0x00000000400dbef4                saul_reg_find_nth
+                0x00000000400dbef8                saul_reg_find_nth
  .text.flush_if_needed
-                0x00000000400dbf10        0xf /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell/shell.o
+                0x00000000400dbf14        0xf /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell/shell.o
                                          0x1b (size before relaxing)
- *fill*         0x00000000400dbf1f        0x1 
+ *fill*         0x00000000400dbf23        0x1 
  .text.shell_run
-                0x00000000400dbf20      0x2b0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell/shell.o
+                0x00000000400dbf24      0x2b0 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell/shell.o
                                         0x328 (size before relaxing)
-                0x00000000400dbf40                shell_run
+                0x00000000400dbf44                shell_run
  .text._reboot_handler
-                0x00000000400dc1d0        0xa /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_sys.o
+                0x00000000400dc1d4        0xa /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_sys.o
                                          0x11 (size before relaxing)
-                0x00000000400dc1d0                _reboot_handler
- *fill*         0x00000000400dc1da        0x2 
+                0x00000000400dc1d4                _reboot_handler
+ *fill*         0x00000000400dc1de        0x2 
  .text._ps_handler
-                0x00000000400dc1dc        0xa /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_ps.o
+                0x00000000400dc1e0        0xa /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_ps.o
                                          0x11 (size before relaxing)
-                0x00000000400dc1dc                _ps_handler
- *fill*         0x00000000400dc1e6        0x2 
+                0x00000000400dc1e0                _ps_handler
+ *fill*         0x00000000400dc1ea        0x2 
  .text._random_init
-                0x00000000400dc1e8       0x39 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_random.o
+                0x00000000400dc1ec       0x39 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_random.o
                                          0x51 (size before relaxing)
-                0x00000000400dc1f0                _random_init
- *fill*         0x00000000400dc221        0x3 
+                0x00000000400dc1f4                _random_init
+ *fill*         0x00000000400dc225        0x3 
  .text._random_get
-                0x00000000400dc224       0x18 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_random.o
+                0x00000000400dc228       0x18 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_random.o
                                          0x24 (size before relaxing)
-                0x00000000400dc228                _random_get
- .text.probe    0x00000000400dc23c       0x46 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_saul_reg.o
+                0x00000000400dc22c                _random_get
+ .text.probe    0x00000000400dc240       0x46 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_saul_reg.o
                                          0x66 (size before relaxing)
- *fill*         0x00000000400dc282        0x2 
- .text._saul    0x00000000400dc284      0x19c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_saul_reg.o
+ *fill*         0x00000000400dc286        0x2 
+ .text._saul    0x00000000400dc288      0x19c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_saul_reg.o
                                         0x218 (size before relaxing)
-                0x00000000400dc2c4                _saul
+                0x00000000400dc2c8                _saul
  .text._print_time
-                0x00000000400dc420       0x29 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
+                0x00000000400dc424       0x29 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
                                          0x2d (size before relaxing)
- *fill*         0x00000000400dc449        0x3 
+ *fill*         0x00000000400dc44d        0x3 
  .text._alarm_handler
-                0x00000000400dc44c        0xf /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
+                0x00000000400dc450        0xf /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
                                          0x16 (size before relaxing)
- *fill*         0x00000000400dc45b        0x1 
+ *fill*         0x00000000400dc45f        0x1 
  .text._rtc_usage
-                0x00000000400dc45c       0x61 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
+                0x00000000400dc460       0x61 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
                                          0xa0 (size before relaxing)
- *fill*         0x00000000400dc4bd        0x3 
+ *fill*         0x00000000400dc4c1        0x3 
  .text._parse_time
-                0x00000000400dc4c0       0xd6 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
+                0x00000000400dc4c4       0xda /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
                                         0x106 (size before relaxing)
- *fill*         0x00000000400dc596        0x2 
+ *fill*         0x00000000400dc59e        0x2 
  .text._rtc_handler
-                0x00000000400dc598      0x148 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
+                0x00000000400dc5a0      0x148 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/shell_commands/sc_rtc.o
                                         0x1d4 (size before relaxing)
-                0x00000000400dc5cc                _rtc_handler
+                0x00000000400dc5d4                _rtc_handler
  .text.tinymt32_next_state
-                0x00000000400dc6e0       0x4c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tinymt32/tinymt32.o
+                0x00000000400dc6e8       0x4c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tinymt32/tinymt32.o
                                          0x50 (size before relaxing)
  .text.period_certification
-                0x00000000400dc72c       0x2a /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tinymt32/tinymt32.o
+                0x00000000400dc734       0x2a /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tinymt32/tinymt32.o
                                          0x2e (size before relaxing)
- *fill*         0x00000000400dc756        0x2 
+ *fill*         0x00000000400dc75e        0x2 
  .text.tinymt32_init
-                0x00000000400dc758       0x5d /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tinymt32/tinymt32.o
+                0x00000000400dc760       0x5d /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tinymt32/tinymt32.o
                                          0x65 (size before relaxing)
-                0x00000000400dc75c                tinymt32_init
- *fill*         0x00000000400dc7b5        0x3 
+                0x00000000400dc764                tinymt32_init
+ *fill*         0x00000000400dc7bd        0x3 
  .text.i2c_read_regs
-                0x00000000400dc7b8       0x4c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
+                0x00000000400dc7c0       0x4c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
                                          0x5c (size before relaxing)
-                0x00000000400dc7b8                i2c_read_regs
+                0x00000000400dc7c0                i2c_read_regs
  .text.i2c_read_reg
-                0x00000000400dc804       0x1c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
+                0x00000000400dc80c       0x1c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
                                          0x20 (size before relaxing)
-                0x00000000400dc804                i2c_read_reg
+                0x00000000400dc80c                i2c_read_reg
  .text.i2c_write_regs
-                0x00000000400dc820       0x52 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
+                0x00000000400dc828       0x52 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
                                          0x5e (size before relaxing)
-                0x00000000400dc820                i2c_write_regs
- *fill*         0x00000000400dc872        0x2 
+                0x00000000400dc828                i2c_write_regs
+ *fill*         0x00000000400dc87a        0x2 
  .text.i2c_write_reg
-                0x00000000400dc874       0x1c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
+                0x00000000400dc87c       0x1c /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph_common/i2c.o
                                          0x24 (size before relaxing)
-                0x00000000400dc874                i2c_write_reg
- .text          0x00000000400dc890       0x3e /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-getchar.o)
+                0x00000000400dc87c                i2c_write_reg
+ .text          0x00000000400dc898       0x3e /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-getchar.o)
                                          0x46 (size before relaxing)
-                0x00000000400dc890                _getchar_r
-                0x00000000400dc8ac                getchar
- *fill*         0x00000000400dc8ce        0x2 
- .text          0x00000000400dc8d0       0x48 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-putchar.o)
+                0x00000000400dc898                _getchar_r
+                0x00000000400dc8b4                getchar
+ *fill*         0x00000000400dc8d6        0x2 
+ .text          0x00000000400dc8d8       0x48 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-putchar.o)
                                          0x4c (size before relaxing)
-                0x00000000400dc8d0                _putchar_r
-                0x00000000400dc8f4                putchar
- .text          0x00000000400dc918      0x126 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-getc.o)
+                0x00000000400dc8d8                _putchar_r
+                0x00000000400dc8fc                putchar
+ .text          0x00000000400dc920      0x126 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-getc.o)
                                         0x132 (size before relaxing)
-                0x00000000400dc918                _getc_r
-                0x00000000400dc9a8                getc
- *fill*         0x00000000400dca3e        0x2 
- .text          0x00000000400dca40       0xcc /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-putc.o)
+                0x00000000400dc920                _getc_r
+                0x00000000400dc9b0                getc
+ *fill*         0x00000000400dca46        0x2 
+ .text          0x00000000400dca48       0xcc /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-putc.o)
                                          0xd0 (size before relaxing)
-                0x00000000400dca40                _putc_r
-                0x00000000400dcaf8                putc
- .text          0x00000000400dcb0c       0x62 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-rget.o)
-                0x00000000400dcb0c                __srget_r
-                0x00000000400dcb5c                __srget
- *fill*         0x00000000400dcb6e        0x2 
+                0x00000000400dca48                _putc_r
+                0x00000000400dcb00                putc
+ .text          0x00000000400dcb14       0x62 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libg.a(lib_a-rget.o)
+                0x00000000400dcb14                __srget_r
+                0x00000000400dcb64                __srget
+ *fill*         0x00000000400dcb76        0x2 
  .text.phydat_unit_to_str
-                0x00000000400dcb70       0x23 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
-                0x00000000400dcb78                phydat_unit_to_str
- *fill*         0x00000000400dcb93        0x1 
+                0x00000000400dcb78       0x23 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
+                0x00000000400dcb80                phydat_unit_to_str
+ *fill*         0x00000000400dcb9b        0x1 
  .text.phydat_prefix_from_scale
-                0x00000000400dcb94       0x1e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
-                0x00000000400dcb98                phydat_prefix_from_scale
- *fill*         0x00000000400dcbb2        0x2 
+                0x00000000400dcb9c       0x1e /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
+                0x00000000400dcba0                phydat_prefix_from_scale
+ *fill*         0x00000000400dcbba        0x2 
  .text.phydat_dump
-                0x00000000400dcbb4       0xe4 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
+                0x00000000400dcbbc       0xe4 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/phydat/phydat_str.o
                                         0x12c (size before relaxing)
-                0x00000000400dcbd8                phydat_dump
+                0x00000000400dcbe0                phydat_dump
  .text.saul_class_to_str
-                0x00000000400dcc98       0x14 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul_str.o
-                0x00000000400dcc9c                saul_class_to_str
+                0x00000000400dcca0       0x14 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul_str.o
+                0x00000000400dcca4                saul_class_to_str
  .text.fmt_u32_dec
-                0x00000000400dccac       0x50 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
-                0x00000000400dccb4                fmt_u32_dec
+                0x00000000400dccb4       0x50 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
+                0x00000000400dccbc                fmt_u32_dec
  .text.fmt_s32_dec
-                0x00000000400dccfc       0x23 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
+                0x00000000400dcd04       0x23 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
                                          0x2a (size before relaxing)
-                0x00000000400dccfc                fmt_s32_dec
- *fill*         0x00000000400dcd1f        0x1 
+                0x00000000400dcd04                fmt_s32_dec
+ *fill*         0x00000000400dcd27        0x1 
  .text.fmt_lpad
-                0x00000000400dcd20       0x2a /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
+                0x00000000400dcd28       0x2a /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
                                          0x36 (size before relaxing)
-                0x00000000400dcd20                fmt_lpad
- *fill*         0x00000000400dcd4a        0x2 
+                0x00000000400dcd28                fmt_lpad
+ *fill*         0x00000000400dcd52        0x2 
  .text.fmt_s32_dfp
-                0x00000000400dcd4c       0xb7 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
+                0x00000000400dcd54       0xb7 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
                                          0xeb (size before relaxing)
-                0x00000000400dcd50                fmt_s32_dfp
- *fill*         0x00000000400dce03        0x1 
+                0x00000000400dcd58                fmt_s32_dfp
+ *fill*         0x00000000400dce0b        0x1 
  .text.fmt_s16_dfp
-                0x00000000400dce04       0x14 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
+                0x00000000400dce0c       0x14 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/fmt/fmt.o
                                          0x18 (size before relaxing)
-                0x00000000400dce04                fmt_s16_dfp
- .text          0x00000000400dce18      0x2fa /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
-                0x00000000400dce38                __adddf3
-                0x00000000400dcf8c                __subdf3
- *fill*         0x00000000400dd112        0x2 
- .text          0x00000000400dd114      0x1fb /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
-                0x00000000400dd1f4                __muldf3
- *fill*         0x00000000400dd30f        0x1 
- .text          0x00000000400dd310      0x20b /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
-                0x00000000400dd3f8                __divdf3
- *fill*         0x00000000400dd51b        0x1 
- .text          0x00000000400dd51c      0x176 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
-                0x00000000400dd51c                __eqdf2
-                0x00000000400dd51c                __nedf2
-                0x00000000400dd550                __gtdf2
-                0x00000000400dd578                __ledf2
-                0x00000000400dd5dc                __gedf2
-                0x00000000400dd604                __ltdf2
-                0x00000000400dd668                __unorddf2
- *fill*         0x00000000400dd692        0x2 
- .text          0x00000000400dd694       0x4c /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
-                0x00000000400dd694                __fixdfsi
- .text._init    0x00000000400dd6e0        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd6e0                _init
- *fill*         0x00000000400dd6e5        0x0 
- *fill*         0x00000000400dd6e5        0x0 
- *fill*         0x00000000400dd6e5        0x0 
- *fill*         0x00000000400dd6e5        0x3 
- .text._kill_r  0x00000000400dd6e8        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd6e8                _kill_r
- *fill*         0x00000000400dd6f3        0x0 
- *fill*         0x00000000400dd6f3        0x0 
- *fill*         0x00000000400dd6f3        0x1 
- .text._open_r  0x00000000400dd6f4        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd6f4                _open_r
- *fill*         0x00000000400dd6ff        0x1 
+                0x00000000400dce0c                fmt_s16_dfp
+ .text          0x00000000400dce20      0x2fa /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
+                0x00000000400dce40                __adddf3
+                0x00000000400dcf94                __subdf3
+ *fill*         0x00000000400dd11a        0x2 
+ .text          0x00000000400dd11c      0x1fb /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
+                0x00000000400dd1fc                __muldf3
+ *fill*         0x00000000400dd317        0x1 
+ .text          0x00000000400dd318      0x20b /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
+                0x00000000400dd400                __divdf3
+ *fill*         0x00000000400dd523        0x1 
+ .text          0x00000000400dd524      0x176 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
+                0x00000000400dd524                __eqdf2
+                0x00000000400dd524                __nedf2
+                0x00000000400dd558                __gtdf2
+                0x00000000400dd580                __ledf2
+                0x00000000400dd5e4                __gedf2
+                0x00000000400dd60c                __ltdf2
+                0x00000000400dd670                __unorddf2
+ *fill*         0x00000000400dd69a        0x2 
+ .text          0x00000000400dd69c       0x4c /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
+                0x00000000400dd69c                __fixdfsi
+ .text._init    0x00000000400dd6e8        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd6e8                _init
+ *fill*         0x00000000400dd6ed        0x0 
+ *fill*         0x00000000400dd6ed        0x0 
+ *fill*         0x00000000400dd6ed        0x0 
+ *fill*         0x00000000400dd6ed        0x3 
+ .text._kill_r  0x00000000400dd6f0        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd6f0                _kill_r
+ *fill*         0x00000000400dd6fb        0x0 
+ *fill*         0x00000000400dd6fb        0x0 
+ *fill*         0x00000000400dd6fb        0x1 
+ .text._open_r  0x00000000400dd6fc        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd6fc                _open_r
+ *fill*         0x00000000400dd707        0x1 
  .text._close_r
-                0x00000000400dd700        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd700                _close_r
- *fill*         0x00000000400dd70b        0x1 
+                0x00000000400dd708        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd708                _close_r
+ *fill*         0x00000000400dd713        0x1 
  .text._lseek_r
-                0x00000000400dd70c        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd70c                _lseek_r
- *fill*         0x00000000400dd717        0x1 
+                0x00000000400dd714        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd714                _lseek_r
+ *fill*         0x00000000400dd71f        0x1 
  .text._fstat_r
-                0x00000000400dd718        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd718                _fstat_r
- *fill*         0x00000000400dd723        0x1 
- .text._stat_r  0x00000000400dd724        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd724                _stat_r
- *fill*         0x00000000400dd72f        0x1 
+                0x00000000400dd720        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd720                _fstat_r
+ *fill*         0x00000000400dd72b        0x1 
+ .text._stat_r  0x00000000400dd72c        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd72c                _stat_r
+ *fill*         0x00000000400dd737        0x1 
  .text._unlink_r
-                0x00000000400dd730        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd730                _unlink_r
- *fill*         0x00000000400dd73b        0x1 
+                0x00000000400dd738        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd738                _unlink_r
+ *fill*         0x00000000400dd743        0x1 
  .text._isatty_r
-                0x00000000400dd73c       0x10 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd73c                _isatty_r
- *fill*         0x00000000400dd74c        0x0 
+                0x00000000400dd744       0x10 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd744                _isatty_r
+ *fill*         0x00000000400dd754        0x0 
  .text._times_r
-                0x00000000400dd74c        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
-                0x00000000400dd74c                _times_r
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x0 
- *fill*         0x00000000400dd757        0x1 
+                0x00000000400dd754        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/newlib_syscalls_default/syscalls.o
+                0x00000000400dd754                _times_r
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x0 
+ *fill*         0x00000000400dd75f        0x1 
  .text._no_sys_func
-                0x00000000400dd758        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/syscalls.o
- *fill*         0x00000000400dd763        0x0 
- *fill*         0x00000000400dd763        0x1 
+                0x00000000400dd760        0xb /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/syscalls.o
+ *fill*         0x00000000400dd76b        0x0 
+ *fill*         0x00000000400dd76b        0x1 
  .text.pthread_setcancelstate
-                0x00000000400dd764        0xd /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/syscalls.o
-                0x00000000400dd764                pthread_setcancelstate
- *fill*         0x00000000400dd771        0x0 
- *fill*         0x00000000400dd771        0x0 
- *fill*         0x00000000400dd771        0x0 
- *fill*         0x00000000400dd771        0x0 
- *fill*         0x00000000400dd771        0x3 
- .text.esp_event_handler_init
-                0x00000000400dd774        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/esp_events.o
-                0x00000000400dd774                esp_event_handler_init
+                0x00000000400dd76c        0xd /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/syscalls.o
+                0x00000000400dd76c                pthread_setcancelstate
+ *fill*         0x00000000400dd779        0x0 
+ *fill*         0x00000000400dd779        0x0 
+ *fill*         0x00000000400dd779        0x0 
  *fill*         0x00000000400dd779        0x0 
  *fill*         0x00000000400dd779        0x3 
+ .text.esp_event_handler_init
+                0x00000000400dd77c        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/cpu/esp_events.o
+                0x00000000400dd77c                esp_event_handler_init
+ *fill*         0x00000000400dd781        0x0 
+ *fill*         0x00000000400dd781        0x3 
  .text._div_mulhi64
-                0x00000000400dd77c       0x51 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/div/div.o
-                0x00000000400dd77c                _div_mulhi64
- *fill*         0x00000000400dd7cd        0x0 
- *fill*         0x00000000400dd7cd        0x0 
- *fill*         0x00000000400dd7cd        0x0 
- *fill*         0x00000000400dd7cd        0x0 
- *fill*         0x00000000400dd7cd        0x0 
- *fill*         0x00000000400dd7cd        0x3 
+                0x00000000400dd784       0x51 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/div/div.o
+                0x00000000400dd784                _div_mulhi64
+ *fill*         0x00000000400dd7d5        0x0 
+ *fill*         0x00000000400dd7d5        0x0 
+ *fill*         0x00000000400dd7d5        0x0 
+ *fill*         0x00000000400dd7d5        0x0 
+ *fill*         0x00000000400dd7d5        0x0 
+ *fill*         0x00000000400dd7d5        0x3 
  .text.clk_val_is_valid
-                0x00000000400dd7d0       0x21 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/esp_idf_soc/rtc_clk.o
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x0 
- *fill*         0x00000000400dd7f1        0x3 
- .text.hwrng_init
-                0x00000000400dd7f4        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph/hwrng.o
-                0x00000000400dd7f4                hwrng_init
+                0x00000000400dd7d8       0x21 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/esp_idf_soc/rtc_clk.o
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
+ *fill*         0x00000000400dd7f9        0x0 
  *fill*         0x00000000400dd7f9        0x0 
  *fill*         0x00000000400dd7f9        0x0 
  *fill*         0x00000000400dd7f9        0x0 
  *fill*         0x00000000400dd7f9        0x3 
- .text.rtc_poweron
-                0x00000000400dd7fc        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph/rtc.o
-                0x00000000400dd7fc                rtc_poweron
+ .text.hwrng_init
+                0x00000000400dd7fc        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph/hwrng.o
+                0x00000000400dd7fc                hwrng_init
+ *fill*         0x00000000400dd801        0x0 
+ *fill*         0x00000000400dd801        0x0 
+ *fill*         0x00000000400dd801        0x0 
  *fill*         0x00000000400dd801        0x3 
- .text.rtc_poweroff
+ .text.rtc_poweron
                 0x00000000400dd804        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph/rtc.o
-                0x00000000400dd804                rtc_poweroff
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
- *fill*         0x00000000400dd809        0x0 
+                0x00000000400dd804                rtc_poweron
  *fill*         0x00000000400dd809        0x3 
+ .text.rtc_poweroff
+                0x00000000400dd80c        0x5 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/periph/rtc.o
+                0x00000000400dd80c                rtc_poweroff
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x0 
+ *fill*         0x00000000400dd811        0x3 
  .text.thread_measure_stack_free
-                0x00000000400dd80c       0x14 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/core/thread.o
-                0x00000000400dd80c                thread_measure_stack_free
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- *fill*         0x00000000400dd820        0x0 
- .text._pop     0x00000000400dd820       0x1f /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tsrb/tsrb.o
- *fill*         0x00000000400dd83f        0x0 
- *fill*         0x00000000400dd83f        0x1 
+                0x00000000400dd814       0x14 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/core/thread.o
+                0x00000000400dd814                thread_measure_stack_free
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ *fill*         0x00000000400dd828        0x0 
+ .text._pop     0x00000000400dd828       0x1f /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tsrb/tsrb.o
+ *fill*         0x00000000400dd847        0x0 
+ *fill*         0x00000000400dd847        0x1 
  .text.tsrb_add_one
-                0x00000000400dd840       0x38 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tsrb/tsrb.o
-                0x00000000400dd840                tsrb_add_one
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
- *fill*         0x00000000400dd878        0x0 
+                0x00000000400dd848       0x38 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/tsrb/tsrb.o
+                0x00000000400dd848                tsrb_add_one
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
+ *fill*         0x00000000400dd880        0x0 
  .text.saul_notsup
-                0x00000000400dd878        0x8 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul.o
-                0x00000000400dd878                saul_notsup
- *fill*         0x00000000400dd880        0x0 
- *fill*         0x00000000400dd880        0x0 
- *fill*         0x00000000400dd880        0x0 
+                0x00000000400dd880        0x8 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul/saul.o
+                0x00000000400dd880                saul_notsup
+ *fill*         0x00000000400dd888        0x0 
+ *fill*         0x00000000400dd888        0x0 
+ *fill*         0x00000000400dd888        0x0 
  .text.saul_reg_read
-                0x00000000400dd880       0x16 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
-                0x00000000400dd880                saul_reg_read
- *fill*         0x00000000400dd896        0x2 
+                0x00000000400dd888       0x16 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
+                0x00000000400dd888                saul_reg_read
+ *fill*         0x00000000400dd89e        0x2 
  .text.saul_reg_write
-                0x00000000400dd898       0x16 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
-                0x00000000400dd898                saul_reg_write
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x0 
- *fill*         0x00000000400dd8ae        0x2 
- .text          0x00000000400dd8b0       0x3d /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
-                0x00000000400dd8b0                __floatunsidf
-                0x00000000400dd8bc                __floatsidf
- *fill*         0x00000000400dd8ed        0x3 
- .text          0x00000000400dd8f0      0x2c6 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdi3.o)
-                0x00000000400dd8f0                __divdi3
- *fill*         0x00000000400ddbb6        0x2 
- .text          0x00000000400ddbb8      0x281 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
-                0x00000000400ddbb8                __udivdi3
- *fill*         0x00000000400dde39        0x3 
- .text          0x00000000400dde3c      0x26e /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
-                0x00000000400dde3c                __umoddi3
+                0x00000000400dd8a0       0x16 /data/riotbuild/riotbase/examples/saul/bin/esp32-mh-et-live-minikit/saul_reg/saul_reg.o
+                0x00000000400dd8a0                saul_reg_write
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x0 
+ *fill*         0x00000000400dd8b6        0x2 
+ .text          0x00000000400dd8b8       0x3d /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
+                0x00000000400dd8b8                __floatunsidf
+                0x00000000400dd8c4                __floatsidf
+ *fill*         0x00000000400dd8f5        0x3 
+ .text          0x00000000400dd8f8      0x2c6 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdi3.o)
+                0x00000000400dd8f8                __divdi3
+ *fill*         0x00000000400ddbbe        0x2 
+ .text          0x00000000400ddbc0      0x281 /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+                0x00000000400ddbc0                __udivdi3
+ *fill*         0x00000000400dde41        0x3 
+ .text          0x00000000400dde44      0x26e /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
+                0x00000000400dde44                __umoddi3
  *(.gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
  *(.irom0.text)
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x00000000400de0aa                _text_end = ABSOLUTE (.)
-                0x00000000400de0aa                _etext = .
+                0x00000000400de0b2                _text_end = ABSOLUTE (.)
+                0x00000000400de0b2                _etext = .
                 0x0000000000000000                _flash_cache_start = 0x0
                 0x000000003ff40000                PROVIDE (UART0, 0x3ff40000)
                 [!provide]                        PROVIDE (SPI1, 0x3ff42000)

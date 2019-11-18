@@ -103,7 +103,7 @@ enum {
     /* pressure */
     UNIT_BAR,       /**< Beer? */
     UNIT_PA,        /**< Pascal */
-    UNIT_PAD,       /**< Pascal decimal */
+    UNIT_PAD,       /**< Pascal difference value from international Standard pressure value (101325 Pascal) [currentval - standardval] */
     /* light */
     UNIT_CD,        /**< Candela */
     /* logical */
@@ -120,6 +120,26 @@ enum {
     UNIT_GPM3       /**< grams per cubic meters */
     /* extend this list as needed */
 };
+
+/**
+the following standard conditions were defined in the DIN 1343 as early as 1940, which have become established worldwide under the term physical standard state:
+
+    Standard pressure pn = 101 325 Pa = 1 013.25 hPa = 101.325 kPa = 1.01325 bar
+
+Information such as standard cubic meters, standard liters, standard cubic centimeters, etc. refer mostly to this "physical standard" according to DIN 1343, although v. a. internationally often deviating standard conditions apply:
+International Standard Atmosphere & technical standard condition
+
+Other common reference states or standard conditions for volume and flow measurement are:
+
+    ISO 2533 (ISA = International Standard Atmosphere defined or adopted by the International Civil Aviation Organization (ICAO), also common in trade in pressurized gas cylinders):
+
+    pn = 1.01325 bar = 1013.25 hPa; Tn = 288.15 K = 15 ° C
+
+The value PAD_BASE_PRESSURE_PA is definated as international standard pressure by saul. 
+
+*/
+#define PAD_BASE_PRESSURE_PA (101325)
+
 
 /**
  * @brief   Generic data structure for expressing physical values

@@ -124,9 +124,19 @@ int16_t bmx280_read_temperature(const bmx280_t* dev)
     return (t_fine * 5 + 128) >> 8;
 }
 
+
+#ifdef MODULE_BME280
+/*
+ * Returns pressure in dPa
+ */
+
+
+#endif
+
 /*
  * Returns pressure in Pa
  */
+
 uint32_t bmx280_read_pressure(const bmx280_t *dev)
 {
     const bmx280_calibration_t *cal = &dev->calibration; /* helper variable */

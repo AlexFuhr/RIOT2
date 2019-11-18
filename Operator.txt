@@ -1,0 +1,14 @@
+struct foo
+{
+  int x;
+  float y;
+};
+
+struct foo var;
+struct foo* pvar;
+pvar = malloc(sizeof(pvar));
+
+var.x = 5;
+(&var)->y = 14.3;
+pvar->y = 22.4;
+(*pvar).x = 6;

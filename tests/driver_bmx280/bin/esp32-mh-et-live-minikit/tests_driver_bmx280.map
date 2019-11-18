@@ -2747,9 +2747,9 @@ LOAD /opt/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../..
                 0x000000003f401c54       0x24 /data/riotbuild/riotbase/tests/driver_bmx280/bin/esp32-mh-et-live-minikit/application_tests_driver_bmx280/main.o
  .rodata.str1.1
                 0x000000003f401c78       0x42 /data/riotbuild/riotbase/tests/driver_bmx280/bin/esp32-mh-et-live-minikit/bmx280/bmx280.o
- .rodata.__func__$4050
+ .rodata.__func__$4051
                 0x000000003f401cba        0xf /data/riotbuild/riotbase/tests/driver_bmx280/bin/esp32-mh-et-live-minikit/bmx280/bmx280.o
- .rodata.__func__$4036
+ .rodata.__func__$4037
                 0x000000003f401cc9       0x16 /data/riotbuild/riotbase/tests/driver_bmx280/bin/esp32-mh-et-live-minikit/bmx280/bmx280.o
  *(.irom1.text)
  *(.gnu.linkonce.r.*)

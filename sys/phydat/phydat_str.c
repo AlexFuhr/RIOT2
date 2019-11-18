@@ -96,7 +96,7 @@ const char *phydat_unit_to_str(uint8_t unit)
         case UNIT_GS:       return "Gs";
         case UNIT_BAR:      return "Bar";
         case UNIT_PA:       return "Pa";
-	case UNIT_PAD;	    return "Pa(dec)"
+		case UNIT_PAD:	    return "PaD";
         case UNIT_PPM:      return "ppm";
         case UNIT_PPB:      return "ppb";
         case UNIT_CD:       return "cd";
@@ -113,7 +113,7 @@ const char *phydat_unit_to_str(uint8_t unit)
 char phydat_prefix_from_scale(int8_t scale)
 {
     switch (scale) {
-	case -1:    return 'd'; //for deci pascal
+		case -1:    return 'd'; //for deci pascal
         case -3:    return 'm';
         case -6:    return 'u';
         case -9:    return 'n';

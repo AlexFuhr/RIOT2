@@ -33,14 +33,26 @@ static int read_temperature(const void *dev, phydat_t *res)
     return 1;
 }
 
+#ifdef MODULE_BME280
 static int read_pressure(const void *dev, phydat_t *res)
+{
+	bmx280_read_temperature(dev);
+	res->val[0] = bmx280_read_pressure((const bmx280_t *)dev) - PAD_BASE_PRESSURE_PA;
+	res->unit = UNIT_PAD;
+    res->scale = 0;
+
+    return 1;
+}
+#endif
+
+/* static int read_pressure(const void *dev, phydat_t *res)
 {
     res->val[0] = bmx280_read_pressure((const bmx280_t *)dev) / 100;
     res->unit = UNIT_PA;
     res->scale = 2;
 
     return 1;
-}
+} */
 
 #ifdef MODULE_BME280
 static int read_relative_humidity(const void *dev, phydat_t *res)
@@ -70,5 +82,14 @@ const saul_driver_t bme280_relative_humidity_saul_driver = {
     .read = read_relative_humidity,
     .write = saul_notsup,
     .type = SAUL_SENSE_HUM,
+};
+#endif
+
+
+#ifdef MODULE_BME280
+const saul_driver_t bme280_pressure_saul_driver = {
+    .read = read_pressure,
+    .write = saul_notsup,
+    .type = SAUL_SENSE_PRESS,
 };
 #endif
